@@ -70,7 +70,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	-moz-border-radius: 0 !important;
 	-o-border-radius: 0 !important;
 	border-radius: 0 !important;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .responsive-slider.flexslider a, .responsive-slider.flexslider a:visited, .responsive-slider.flexslider a:hover {
 	text-decoration: none;

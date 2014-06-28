@@ -53,9 +53,6 @@ Copyright: Dave Gandy, http://fontawesome.io
 
 }
 
-
-
-
 @font-face {
     font-family: 'helveticabold';
     src: url('fonts/helvetica_bold_0-webfont.eot');
@@ -68,8 +65,9 @@ Copyright: Dave Gandy, http://fontawesome.io
 
 }
 
-/**************************** Colonik styles *****************************/
+.espaciador{width: 100%; height: 15px;}
 
+/**************************** Colonik styles *****************************/
 
 /********************** Home ***********************/
 
@@ -85,9 +83,22 @@ font-weight: bold; display: inline-block; vertical-align: top;}
 .lineadivisoria-head{ width: 97%; height: 1px; background-color: #1f8fa3; margin: 8px auto; clear: both;}
 .fa-bars {background: none !important; color: #60bf19;}
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before{ font-size: 25px !important; }
-/***************Menu expandable*************/
+
+.homespiffs { width: 100%;}
+.homespiffs ul{ margin: 0; padding: 0; width: 100%; text-align: justify; vertical-align: top; line-height: 21px;}
+.homespiffs ul li{list-style: none; display: inline-block; vertical-align:top; width: 32%;
+    border-left: solid 1px #8fc762; margin: 0 10px 0 0; padding: 0 0 0 15px;}
+.homespiffs ul li:first-child{border-left: none !important; padding: 0;}
+.homespiffs ul li:last-child {margin: 0;}
+.homespiffs ul li ul{ margin: 0 0 0 10px;}
+.homespiffs ul li ul li{list-style: circle; display: list-item; width: 100%; border-left: none;
+    padding: 0; margin: 0 0 0 15px;}
+.homespiffs ul li ul li:first-child { padding: 0;}
+.homespiffs ul li ul li:last-child { margin: 0 0 0 15px;}
+.videhome {width: 300px; height: 250px;}
 
 
+/***************  *************/
 
 
 body {
@@ -272,7 +283,7 @@ h5, h6 {
 p,
 .wp-audio-shortcode,
 .video-player {
-	margin-bottom: 24px;
+	margin-bottom: 7px;
 }
 b, strong {
 	font-weight: bold;
@@ -1023,6 +1034,10 @@ object {
 .logocolonik{ width: 225px;}
 .main-navigation ul ul {margin: 4px 0 0 -4px;}
 .main-navigation .menu > li { margin-left: 4px; padding: 5px 4px;}
+.homespiffs ul {line-height: 17px;}
+.videhome{height: 210px;}
+.homespiffs ul li{width: 31%;}
+.homespiffs ul{margin: 0 0 0 12px;}
 }
 
 
@@ -1062,6 +1077,10 @@ padding: 0 !important; margin: 29px -16px 0 0;  }
 .logocolonik { float: left; margin: 23px 0 0; width: 200px;}
 .topheader-redes{min-width: 255px;}
 .topheader-redes ul li{margin: 0;}
+.homespiffs ul li:first-child {width: 100%;}
+.videhome { width: 94%; margin: 0 0 20px 0; min-height: 220px;}
+.homespiffs ul li { width: 46%; border-left: none; padding: 0;}
+.homespiffs ul li:last-child {padding: 0 0 0 15px; border-left: 1px solid #8fc762;}
 }
 
 /* Smartphones */
@@ -1091,6 +1110,11 @@ padding: 0 !important; margin: 29px -16px 0 0;  }
 .menu li:first-child {margin: 0;}
 .site-header .main-navigation ul ul{width: 100%;}
 .main-navigation li, .main-navigation .menu > li {padding: 0;}
+.videhome { margin: 0; width: 100%; min-height: 150px; height: 150px; }
+.homespiffs ul li{width: 90%; margin: 0; border-bottom: 1px solid #8fc762; padding: 12px 0 17px !important;}
+.homespiffs ul li:first-child{width: 90%; }
+.homespiffs ul li:last-child {padding: 0; border-left: none; border-bottom: none;}
+.homespiffs ul li ul li{ border-bottom: none; padding: 0 !important}
 }
 
 
