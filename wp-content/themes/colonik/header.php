@@ -17,6 +17,8 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
 		<?php wp_head(); ?>
+		
+		
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -27,7 +29,8 @@
 
 <header id="masthead" class="site-header site-element" role="banner">
 		
-	<img class="logocolonik" src="<?php echo get_bloginfo('template_directory');?>/img/home/logocolonik.png"/>
+	<a href="<?php echo get_site_url(); ?>">
+	<img class="logocolonik" src="<?php echo get_bloginfo('template_directory');?>/img/home/logocolonik.png"/></a>
 
 	<div class="topheader-redes"><div class="textoredes">siguenos en</div><ul>
 			<li><a href="https://www.facebook.com/ColonikCenter" target="_new"><img 
