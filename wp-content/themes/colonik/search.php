@@ -5,7 +5,10 @@
  * @package Enterprise
  */
 
+ 
 get_header(); ?>
+
+
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -18,6 +21,8 @@ get_header(); ?>
 				</h1>
 			</header><!-- .page-header -->
 
+
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -29,6 +34,8 @@ get_header(); ?>
 					 */
 					get_template_part( 'templates/content', 'search' );
 				?>
+				
+				
 
 			<?php endwhile; ?>
 

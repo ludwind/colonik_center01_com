@@ -17,7 +17,8 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
 		<?php wp_head(); ?>
-		
+		<link href="//fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet" type="text/css">
+
 		
 	</head>
 

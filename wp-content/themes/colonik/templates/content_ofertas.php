@@ -43,13 +43,22 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-<div class="ofertas"><ul>
-	<li>paquetes especiales de <?php the_field('ofertas-mes'); ?></li>
-	<li><?php the_field('oferta_1'); ?></li>
-	<li><?php the_field('oferta_2'); ?></li>
-	<li><?php the_field('oferta_3'); ?></li>
-	<li><?php the_field('oferta_4'); ?></li>
-	<li><?php the_field('oferta_5'); ?></li>
+
+	
+</table>
+<div class="ofertas ofertasf"><ul>
+	<li class="ofertascontent">paquetes especiales de <?php the_field('ofertas-mes'); ?></li>
+	<li><div class="ofertas-leftline"></div><div class="ofertasline-mobile"></div></li>
+	<li class="ofertascontent"><?php the_field('oferta_1'); ?></li>
+	<li><div class="ofertas-leftline"></div></li>
+	<li class="ofertascontent"><?php the_field('oferta_2'); ?></li>
+	
+	<li><div class="ofertasline-mobile"></div></li>
+	<li class="ofertascontent ofertass botomofertas-mobileadd" style="border-bottom:0"><?php the_field('oferta_3'); ?></li>
+	<li class="ofertass"><div class="ofertas-leftline"></div></li>
+	<li class="ofertascontent ofertass" style="border-bottom:0"><?php the_field('oferta_4'); ?></li>
+	<li class="ofertass"><div class="ofertas-leftline"></div><div class="ofertasline-mobile"></div></li>
+	<li class="ofertascontent ofertass" style="border-bottom:0"><?php the_field('oferta_5'); ?></li>
 </ul></div>
 	
 	

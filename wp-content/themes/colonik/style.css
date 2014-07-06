@@ -178,12 +178,74 @@ font-weight: bold; display: inline-block; vertical-align: top;}
 
 /******************* Ofertas **************/
 
-.ofertas{width:100%;}
-.ofertas ul{}
-.ofertas ul li{ display: inline-block; list-style: none; width: 30%;}
-.ofertas ul li:first-child{color: #8fd25e; text-transform: uppercase; font-weight: bold; font-size: 30px;
-    font-family: 'multicolore_regular';}
+.ofertas{width:100%; margin: 25px 0 0 0; color:#636363; font-size: 16px; line-height: 20px;}
+.ofertas a { color:#168a93; text-decoration: none; font-size: 20px;}
+.ofertas ul{ color: #636363; margin: 0;}
+.ofertas ul li{ display: inline-block; list-style: none; vertical-align: top; min-height: 140px;
+    font-family: "Nunito"; font-weight: 700; font-style: normal; padding: 10px;}
+.ofertascontent{width: 30%; margin: 0; border-bottom: 1px solid #008589; }
+.ofertasf ul li:first-child{color: #8fd25e; text-transform: uppercase; font-weight: bold; font-size: 30px;
+    font-family: 'multicolore_regular'; line-height: 29px; padding: 10px; }
+.ofertasf ul li {padding: 10px;}
+.ofertas-leftline {    background-color: #008589; float: left; height: 118px; margin: 0;
+    width: 1px;}
+.ofertasline-mobile {    background-color: #008589; float: left; height: 118px; margin: 0;
+    width: 1px; display: none}
+.ofertass {margin: 9px 0 0 0;}
+.ofertass ul{ margin: 0;}
+.botomofertas-mobileadd{border-bottom:none;}
 
+
+/******************* contactanos **************/
+
+.contactanos{ color:#fff; }
+.contactanos ul{ clear: both; width: 100%; margin: 0 0 30px 0; padding: 0; }
+.contactanos ul li{ display: inline-block; list-style: none; width: 48%; margin: 0 1% 0 0;
+    vertical-align: top;}
+.contactanos ul li:first-child{ background-color:#98c4c5;}
+.cont-top-mapa {background-color:#34898c; width: 100%; line-height: 17px; padding: 19px; min-height: 112px;}
+.contactanos ul li:first-child article{ width: 100%; padding: 10px;}
+.contactanos ul li:last-child{background-color:#d4d4d4;}
+.cont-top-form {background-color:#b4b4b4; width: 100%; line-height: 17px; padding: 19px; min-height: 112px;}
+.contactanos ul li:last-child article{ width: 100%; padding: 10px; }
+
+.contfields {-webkit-border-radius: 15px !important;-moz-border-radius: 15px !important;
+    border-radius: 15px !important; color:#8c8c8c; border: solid 1px #d2d2d2;}
+.cont-nombre{ background:url("img/contactanos/nameback.png") #fff !important;
+    background-repeat: no-repeat !important; height: 44px !important; padding: 0 0 0 44px !important;}
+.cont-email{ background:url("img/contactanos/correoback.png") #fff !important;
+    background-repeat: no-repeat !important; height: 44px !important; padding: 0 0 0 44px !important;}
+.cont-mensaje{  background:url("img/contactanos/mensajeback.png") #fff !important;
+    background-repeat: no-repeat !important; padding: 10px 0 0 44px !important;}
+.cont-botonenviar { background-color:#66b6b9; color:#fff; -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important; border-radius: 15px !important; margin:0 0 0 157px !important;}
+.ninja-forms-required-items{display: none;}
+
+.googlemaps {width: 100%; height: 400px;}
+
+/******************* blog **************/
+
+.blog-dinteres{background-color:#66b6b9; padding: 10px 20px; color:#fff; line-height: 24px;
+    font-family: 'helvetica_bqregular'; font-size: 21px; margin: 10px 0 0;}
+.blog-dinteres em {font-size:14px;}
+
+.recentopost{margin: 0; border-bottom: solid 8px #ededed; padding: 0 0 10px 0;}
+.recentopost li{display: inline-block; list-style: none; width: 31%; margin: 0 0 0 16px;
+    vertical-align: top; border-left: 1px solid #bdcaca; padding: 0 0 0 7px; }
+.recentopost li:first-child{margin: 0; border-left:none; padding: 0;}
+.recentopost a{color: #6c6c6c; text-decoration: none;}
+.imgrecent{ width: 80%; height: 190px; /*border: 1px solid grey;*/ vertical-align: middle;margin: 0;}
+.imgrecent img{vertical-align: middle;}
+.mainrecenthome{margin:20px 0;}
+.leermas{color: #83bfbc !important; font-family: 'helveticabold'; font-size: 16px;
+    text-decoration: none !important; float: right; text-align: right;}
+.bloghome-summary{border-bottom: solid 8px #ededed; padding: 0 0 40px;}
+
+.blog-rightnav{padding: 20px 0 0 0;}
+.blog-rightnav aside{border-bottom: 1px solid #a5bdbe; padding: 0 0 20px 0;}
+.searchblog{ background:url("img/blog/search.png") #fff !important;
+    background-repeat: no-repeat !important; height: 47px !important; padding: 0 0 0 44px !important;
+    border: solid 2px #cecece !important;}
 
 body {
 }
@@ -1119,6 +1181,10 @@ object {
 .homespiffs ul li{width: 31%;}
 .homespiffs ul{margin: 0 0 0 12px;}
 .datosimporantes article {padding: 0;}
+.ofertascontent{ width: 28%;}
+.ofertas ul li{min-height: 158px;}
+.ofertasline-mobile {height: 173px;}
+.botomofertas-mobileadd{border-bottom:  1px solid #008589 !important;}
 }
 
 
@@ -1169,6 +1235,13 @@ padding: 0 !important; margin: 29px -16px 0 0;  }
 .leetambien li:last-child{padding: 7px 0 0 10px !important; display: inline-block; list-style: none;
     margin: 0 !important;}
 .leetambien li:first-child {padding: 9px 0 5px !important; width: 18% !important;}
+.ofertascontent {width: 43%;}
+.ofertas ul li { min-height: 200px;}
+.ofertas-leftline{visibility: hidden;}
+.ofertasline-mobile{display: inherit;}
+.googlemaps { height: 369px;}
+.cont-botonenviar { margin: 0 0 0 65px !important;}
+
 }
 
 /* Smartphones */
@@ -1213,6 +1286,12 @@ padding: 0 !important; margin: 29px -16px 0 0;  }
 .entry-title{font-size: 20px;}
 .leetambiendesk{display: none;}
 .leetambienmobile{display: block;}
+.ofertascontent{width: 100%;display: list-item !important;}
+.ofertas ul li{display: none; min-height:0;}
+.contactanos ul { font-size: 12px;}
+.contactanos ul li { width: 100%; margin: 0 0 20px 0;}
+.cont-botonenviar { margin: 0 0 0 95px !important;}
+
 }
 
 

@@ -62,7 +62,10 @@ function enterprise_setup() {
 	add_image_size( 'productos', 430, 400, true );
 	
 	// add a hard cropped (for uniformity) image size for the product grid
-	add_image_size( 'ofertasimgprincipal', 1000, 400, true );	
+	add_image_size( 'ofertasimgprincipal', 1000, 400, true );
+	
+	// add a hard cropped (for uniformity) image size for the product grid
+	add_image_size( 'blogrecientes', 190, 180, true );	
 	
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

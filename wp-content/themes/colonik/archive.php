@@ -9,7 +9,6 @@
 
 get_header(); ?>
 
-
 		<?php if ( have_posts() ) : ?>
 
 <div class="gridcatprod">
