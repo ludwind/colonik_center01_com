@@ -17,19 +17,12 @@ if ( post_password_required() )
 	return;
 ?>
 
+<div class="lineadivisoria-comments"></div>
+
 <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
-		<span class="comments-title"><i class="fa fa-comments"></i>
-			<?php
-				printf( _nx( 'One response... ', '%1$s responses... ', get_comments_number(), 'comments title', 'enterprise' ),
-					number_format_i18n( get_comments_number() )
-				);
-			?>
-			<?php if ( comments_open() ) : ?>
-				<a href="#commentform" class="add-comment"><?php _e( 'add one', 'enterprise' ); ?></a>
-			<?php endif; ?>
-		</span>
+	<h3 class="comment-reply-title" id="reply-title">Comentarios </h3>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
@@ -72,13 +65,11 @@ if ( post_password_required() )
 			array(
 				'id_form'				=> 'commentform',
 				'id_submit'				=> 'submit',
-				'title_reply'			=> __( 'Leave a Reply', 'enterprise' ),
-				'title_reply_to'		=> __( 'Leave a Reply to %s', 'enterprise' ),
+				'title_reply'			=> __( 'Dejanos un comentario', 'enterprise' ),
+				'title_reply_to'		=> __( 'Deja un comentario a %s', 'enterprise' ),
 				'cancel_reply_link'		=> __( 'Cancel Reply', 'enterprise' ),
-				'label_submit'			=> __( 'Post Comment', 'enterprise' ),	
+				'label_submit'			=> __( 'Enviar comentario', 'enterprise' ),	
 				'comment_field'			=>  '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true">' . '</textarea></p>',	
-				'must_log_in'			=> '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'enterprise' ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>',	
-				'logged_in_as'			=> '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'enterprise' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',	
 				'comment_notes_before'	=> '',	
 				'comment_notes_after'	=> '',	
 				'fields'				=> apply_filters( 'comment_form_default_fields', array(
@@ -94,3 +85,4 @@ if ( post_password_required() )
 	?>
 
 </div><!-- #comments -->
+<p><br></p>

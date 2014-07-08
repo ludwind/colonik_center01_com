@@ -4,10 +4,8 @@
  */
 ?>
 
-
-<div class="bloghome-summary">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( is_search() || is_archive() || 1 == get_theme_mod( 'enterprise_post_content' ) ) : ?>
+
 <!------------------- thumb --------------------- -->	
 	<div class="entry-summary">
 		<?php
@@ -30,33 +28,16 @@
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 	</header><!-- .entry-header -->
 	
-<!------------------- summary --------------------- -->			
-<?php the_excerpt(); ?>
 
-<a href="<?php the_permalink(); ?>" rel="bookmark" class="leermas">Leer m&#225;s >></a>
-
-</div>
-	
-	<?php else : ?>
-	<div class="entry-content">			
-		<?php
-			// display featured image
-			if ( has_post_thumbnail() ) : ?>
-				<a href="<?php the_permalink(); ?>" rel="bookmark">
-					<?php the_post_thumbnail( 'enterprise_featured_image', array( 'class' => 'featured-img' ) ); ?>
-				</a>
-				<?php
-			endif;
-			// output the content
-			// break into pages
+<?php the_content( get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise' ) ) . '<i class="fa fa-caret-right"></i>' );
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'enterprise' ),
 				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-	<?php endif; ?>
+) ); ?>
 
 
+<?php if ( is_search() || is_archive() || 1 == get_theme_mod( 'enterprise_post_content' ) ) : ?>
+<?php else : ?><?php endif; ?>
 
+	
 </article><!-- #post-## -->
