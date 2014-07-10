@@ -80,6 +80,7 @@ Copyright: Dave Gandy, http://fontawesome.io
 .espaciador{width: 100%; height: 15px;}
 
 /**************************** Colonik styles *****************************/
+#sidr-callback, #sidr-main{display:none;}
 
 /********************** Home ***********************/
 
@@ -125,6 +126,7 @@ font-weight: bold; display: inline-block; vertical-align: top;}
 
 .comparteloizq{ background-color:#6ac6d6; color:#fff; width: 100%; }
 .comparteloflotrigh {width: 54%; float: right; margin: 7px 0;}
+.comparteloflotrigh p {display: none;}
 .comparteloizq article{padding: 10px; font-style: italic;}
 .redesizq{ width: 100%; min-height: 40px; background-color: #49b6ca; color: #fff; padding:0px 18px !important;
 font-weight: bold; display: inline-block; vertical-align: top;}
@@ -235,7 +237,7 @@ font-weight: bold; display: inline-block; vertical-align: top;}
 .recentopost li:first-child{margin: 0; border-left:none; padding: 0;}
 .recentopost a{color: #6c6c6c; text-decoration: none;}
 .imgrecent{ width: 100%; height: 170px; /*border: 1px solid grey;*/ vertical-align: middle;margin: 0;}
-.imgrecent img{vertical-align: middle; width: 175px !important; height: 165px;}
+.imgrecent img{vertical-align: middle; width: 175px !important; height: 160px;}
 .mainrecenthome{margin:20px 0;}
 .leermas{color: #83bfbc !important; font-family: 'helveticabold'; font-size: 16px;
     text-decoration: none !important; float: right; text-align: right;}

@@ -33,7 +33,7 @@
 	<a href="<?php echo get_site_url(); ?>">
 	<img class="logocolonik" src="<?php echo get_bloginfo('template_directory');?>/img/home/logocolonik.png"/></a>
 
-	<div class="topheader-redes"><div class="textoredes">siguenos en</div><ul>
+	<div class="topheader-redes"><div class="textoredes">s&#237;guenos en</div><ul>
 			<li><a href="https://www.facebook.com/ColonikCenter" target="_new"><img 
 				src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-facebook.png"/></a></li>
 			<li><a href="https://twitter.com/colonik" target="_new"><img 

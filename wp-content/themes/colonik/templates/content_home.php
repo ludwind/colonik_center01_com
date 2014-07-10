@@ -22,24 +22,30 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">			
-		<?php
-			// display featured image
-			if ( has_post_thumbnail() ) : ?>
-				<a href="<?php the_permalink(); ?>" rel="bookmark">
-					<?php the_post_thumbnail( 'enterprise_featured_image', array( 'class' => 'featured-img' ) ); ?>
-				</a>
-				<?php
-			endif;
-			// output the content
-			the_content( get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise' ) ) . '<i class="fa fa-caret-right"></i>' );
-			// break into pages
+<?php the_content( get_theme_mod( 'enterprise_read_more', __( 'Continue reading', 'enterprise' ) ) . '<i class="fa fa-caret-right"></i>' );
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'enterprise' ),
 				'after'  => '</div>',
-			) );
-		?>
+) ); ?><?php endif; ?>	
 	</div><!-- .entry-content -->
-	<?php endif; ?>
+
+	
+	
+	
+<div class="espaciador"></div>
+<div class="homespiffs">
+<ul>
+<li><?php the_field('youtube'); ?></li>
+<li><?php the_field('contenido_home'); ?></li>
+<li>
+<?php if ( has_post_thumbnail() ) : ?>
+<a href="<?php the_permalink(); ?>" rel="bookmark">
+<?php the_post_thumbnail( 'homepagebanner', array( 'class' => 'featured-img' ) ); ?></a>
+<?php else: ?><?php endif ?>
+</li>
+</ul>
+</div>	
+	
 
 	<footer class="entry-footer">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
@@ -64,4 +70,8 @@
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 	</footer><!-- .entry-footer -->
+	
+	
+
+	
 </article><!-- #post-## -->

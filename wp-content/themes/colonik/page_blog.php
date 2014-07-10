@@ -18,6 +18,8 @@ Template Name: Colonik Blog
 get_header(); ?>
 
 <div id="primary" class="content-area"><main id="main" class="site-main" role="main">
+
+<div class="blog-dinteres"><?php the_field('deinteres'); ?></div>
 		
 <!------------------ recent post -------------------->			
 

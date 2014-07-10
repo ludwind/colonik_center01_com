@@ -36,29 +36,7 @@
 				'after'  => '</div>',
 ) ); ?><?php endif; ?>	
 
-	<footer class="entry-footer">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'enterprise' ) );
-				if ( $categories_list && enterprise_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php echo '<i class="fa fa-archive"></i>' . $categories_list; ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'enterprise' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tag-links">
-				<?php echo '<br><i class="fa fa-tags"></i>' . $tags_list; ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-	</footer><!-- .entry-footer -->
+	
 
 
 <div class="leetambien leetambiendesk"><ul>
