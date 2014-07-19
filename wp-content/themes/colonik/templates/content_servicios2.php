@@ -75,14 +75,10 @@
 <div class="comparteloizq"><article>
 "<?php the_field('compartelo_izq'); ?>"</article>
 	<div class="redesizq"><div class="comparteloflotrigh"><span>Comp&#225;rtelo</span><ul>
-			<li><a href="http://www.pinterest.com/colonikcenter/"><img 
-				src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-pinterest.png"/></a></li>	
-			<li><a href="https://plus.google.com/103349599113725029224" target="_new"><img
-			 src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-googleplus.png"/></a></li>
-			<li><a href="https://twitter.com/colonik" target="_new"><img 
-				src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-twitter.png"/></a></li>
-			<li><a href="https://www.facebook.com/ColonikCenter" target="_new"><img 
-				src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-facebook.png"/></a></li>
+<li><a href="http://www.pinterest.com/" target="_new"><img src="wp-content/themes/colonik/img/home/redes-pinterest.png" alt="" /></a></li>
+<li><a href="https://plus.google.com/" target="_new"><img src="wp-content/themes/colonik/img/home/redes-googleplus.png" alt="" /></a></li>
+<li><span class="st_twitter_custom"><img src="wp-content/themes/colonik/img/home/redes-twitter.png" alt="" /></span></li>
+<li><span class="st_facebook_custom"><img src="wp-content/themes/colonik/img/home/redes-facebook.png" alt="" /></span></li>
 	</ul></div></div>	
 </div>
 

@@ -90,8 +90,11 @@ font-weight: bold; display: inline-block; vertical-align: top;}
 .textoredes{ display: inline-block; margin: 8px 10px 0 0; vertical-align: top;}
 .topheader-redes ul{ display: inline-block; padding: 0; margin: 5px 0 0;}
 .topheader-redes ul li { display: inline-block; list-style: none; margin: 0 5px;}
-.topheader-redes ul li img {width: 33px; height: auto;}
+.topheader-redes ul li img {width: 33px; height: auto; vertical-align: text-top; cursor: pointer;}
 .topheader-redes ul li img:hover { opacity: 0.5}
+.st_plusone_custom {margin: 4px 0 0 -33px; position: absolute; visibility: hidden !important;}
+.st_plusone_custom iframe{ visibility: hidden !important;}
+
 .logocolonik{ margin: 23px 0 0 15px; width: 275px;}
 .lineadivisoria-head{ width: 97%; height: 1px; background-color: #1f8fa3; margin: 8px auto; clear: both;}
 .fa-bars {background: none !important; color: #60bf19;}
@@ -236,8 +239,8 @@ font-weight: bold; display: inline-block; vertical-align: top;}
     vertical-align: top; border-left: 1px solid #bdcaca; padding: 0 0 0 7px; }
 .recentopost li:first-child{margin: 0; border-left:none; padding: 0;}
 .recentopost a{color: #6c6c6c; text-decoration: none;}
-.imgrecent{ width: 100%; height: 170px; /*border: 1px solid grey;*/ vertical-align: middle;margin: 0;}
-.imgrecent img{vertical-align: middle; width: 175px !important; height: 160px;}
+.imgrecent{ width: 100%; height: 145px; /*border: 1px solid grey;*/ vertical-align: middle;margin: 0;}
+.imgrecent img{vertical-align: middle; width: 175px !important; height: 140px;}
 .mainrecenthome{margin:20px 0;}
 .leermas{color: #83bfbc !important; font-family: 'helveticabold'; font-size: 16px;
     text-decoration: none !important; float: right; text-align: right;}
@@ -726,6 +729,9 @@ input[type="button"]:hover {
 .main-navigation ul ul a:hover {font-size: 12.5px; color: #7d7d7d; background-color: #c6e8ee;}	
 .main-navigation ul ul a {font-size: 13px; padding: 8px 0px; border-bottom: 1px solid #eee;
 	width: 123px; color: #fff;}
+
+.menuproductos ul { padding: 0 6.5px !important ;}
+
 .main-navigation ul ul .highlight a {
 	border: 2px solid rgba(0, 0, 0, 0.05);
 	border-width: 0 2px;
@@ -1265,7 +1271,7 @@ padding: 0 !important; margin: 29px -16px 0 0;  }
 .ofertasline-mobile{display: inherit;}
 .googlemaps { height: 369px;}
 .cont-botonenviar { margin: 0 0 0 65px !important;}
-.imgrecent img { height: 129px; width: 139px !important;}
+.imgrecent img { height: 145px; width: 139px !important;}
 .imgrecent {height: 138px;}
 .widget_sp_image-image-link {text-align: center; margin: 0 auto;}
 .widget_sp_image-image-link img{text-align: center; margin: 0 auto;}
@@ -1280,7 +1286,7 @@ padding: 0 !important; margin: 29px -16px 0 0;  }
 .menu-toggle2 {	display: inline-block;}
 .main-navigation.toggled .nav-menu {display: block;text-align: left;margin-top: 24px;}
 .main-navigation ul { margin: 0 !important;}
-.main-navigation ul ul {display: block;float: none;position: static;border: none;}
+.main-navigation ul ul {float: none;position: static;border: none;}
 .logocolonik { float: none; margin: 23px auto 5px; width: 275px; clear: both;}
 .main-navigation{ float: left; margin:19px 0 0;}
 .topheader-redes{margin: 12px -16px 0 0;}

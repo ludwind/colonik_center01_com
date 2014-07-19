@@ -1,4 +1,11 @@
 <?php
+
+
+/*
+Template Name Posts: Blog
+*/
+
+
 /**
  * The Template for displaying all single posts.
  *

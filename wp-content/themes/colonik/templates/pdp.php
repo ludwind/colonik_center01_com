@@ -41,7 +41,7 @@
 
 <div class="leetambien leetambiendesk"><ul>
 <li><img src="<?php echo get_bloginfo('template_directory');?>/img/servicios/leermas.png"/></li>
-<li>Lee tambi&#233;n: <?php the_field('leetambien'); ?></li></ul></div>
+<li>Tambi&#233;n te recomendamos: <?php the_field('leetambien'); ?></li></ul></div>
 	
 
 </li><li>
@@ -57,7 +57,7 @@
 
 <div class="leetambien leetambienmobile"><ul>
 <li><img src="<?php echo get_bloginfo('template_directory');?>/img/servicios/leermas.png"/></li>
-<li>Lee tambi&#233;n: <?php the_field('leetambien'); ?></li></ul></div>
+<li>Tambi&#233;n te recomendamos: <?php the_field('leetambien'); ?></li></ul></div>
 	
 
 </li></ul><p></p><Br></div>	
