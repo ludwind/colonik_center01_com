@@ -59,6 +59,8 @@
 <li><img src="<?php echo get_bloginfo('template_directory');?>/img/servicios/leermas.png"/></li>
 <li>Tambi&#233;n te recomendamos: <?php the_field('leetambien'); ?></li></ul></div>
 	
+<p><FORM><INPUT class="bottonback" Type="button" VALUE="Regresar" onClick="history.go(-1);return true;"></FORM>
+</p>	
 
 </li></ul><p></p><Br></div>	
 </article><!-- #post-## -->

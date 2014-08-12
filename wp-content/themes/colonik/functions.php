@@ -83,6 +83,7 @@ function enterprise_setup() {
 endif; // enterprise_setup
 add_action( 'after_setup_theme', 'enterprise_setup' );
 
+
 /**
  * Register widget area.
  *

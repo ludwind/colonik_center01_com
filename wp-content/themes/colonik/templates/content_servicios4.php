@@ -70,12 +70,13 @@
 
 <!-------Compartelo--------->
 <div class="comparteloizq"><article>
-"<?php the_field('compartelo_izq'); ?>"</article>
+<?php  $image = get_field('compartelo_izq'); if( !empty($image) ): ?><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+</article>
 	<div class="redesizq"><div class="comparteloflotrigh"><span>Comp&#225;rtelo</span><ul>
-<li><a href="http://www.pinterest.com/" target="_new"><img src="wp-content/themes/colonik/img/home/redes-pinterest.png" alt="" /></a></li>
-<li><a href="https://plus.google.com/" target="_new"><img src="wp-content/themes/colonik/img/home/redes-googleplus.png" alt="" /></a></li>
-<li><span class="st_twitter_custom"><img src="wp-content/themes/colonik/img/home/redes-twitter.png" alt="" /></span></li>
-<li><span class="st_facebook_custom"><img src="wp-content/themes/colonik/img/home/redes-facebook.png" alt="" /></span></li>
+<li><a href="javascript:pinIt();"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-pinterest.png"/></a></li>
+<li><a href="https://plus.google.com/" target="_new"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-googleplus.png"/></a></li>
+<li><span class="st_twitter_custom"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-twitter.png"/></span></li>
+<li><span class="st_facebook_custom"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-facebook.png"/></span></li>
 	</ul></div></div>	
 </div>
 

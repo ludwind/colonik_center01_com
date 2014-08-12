@@ -58,8 +58,9 @@
 	<li class="ofertass"><div class="ofertas-leftline"></div></li>
 	<li class="ofertascontent ofertass" style="border-bottom:0"><?php the_field('oferta_4'); ?></li>
 	<li class="ofertass"><div class="ofertas-leftline"></div><div class="ofertasline-mobile"></div></li>
-	<li class="ofertascontent ofertass" style="border-bottom:0"><?php the_field('oferta_5'); ?></li>
+	<li class="ofertascontent ofertass" id="box3" style="border-bottom:0"><?php the_field('oferta_5'); ?></li>
 </ul></div>
 	
-	
+
 </article><!-- #post-## -->
+<div class="espaciador"></div><p><br></p>

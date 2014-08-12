@@ -61,8 +61,10 @@
 	</footer><!-- .entry-footer -->
 
 
+<div class="leetambien leetambiendesk"><ul>
+<li><img src="<?php echo get_bloginfo('template_directory');?>/img/servicios/leermas.png"/></li>
+<li>Lee tambi&#233;n: <?php the_field('leetambien'); ?></li></ul></div>
 	
-
 </li><li>
 
 <!-------Featured image--------->
@@ -71,24 +73,36 @@
 <?php the_post_thumbnail( 'servicios_featured', array( 'class' => 'featured-img' ) ); ?></a>
 <?php else: ?><?php endif ?></div>
 
+
 <!-------Compartelo--------->
 <div class="comparteloizq"><article>
-"<?php the_field('compartelo_izq'); ?>"</article>
+<?php  $image = get_field('compartelo_izq'); if( !empty($image) ): ?><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
+</article>
 	<div class="redesizq"><div class="comparteloflotrigh"><span>Comp&#225;rtelo</span><ul>
-<li><a href="http://www.pinterest.com/" target="_new"><img src="wp-content/themes/colonik/img/home/redes-pinterest.png" alt="" /></a></li>
-<li><a href="https://plus.google.com/" target="_new"><img src="wp-content/themes/colonik/img/home/redes-googleplus.png" alt="" /></a></li>
-<li><span class="st_twitter_custom"><img src="wp-content/themes/colonik/img/home/redes-twitter.png" alt="" /></span></li>
-<li><span class="st_facebook_custom"><img src="wp-content/themes/colonik/img/home/redes-facebook.png" alt="" /></span></li>
+<li><a href="javascript:pinIt();"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-pinterest.png"/></a></li>
+<li><a href="https://plus.google.com/" target="_new"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-googleplus.png"/></a></li>
+<li><span class="st_twitter_custom"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-twitter.png"/></span></li>
+<li><span class="st_facebook_custom"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-facebook.png"/></span></li>
 	</ul></div></div>	
 </div>
-
+<!-------Datos importantes--------->
+<div class="datosimporantes"><article><?php the_field('datos-imporantes'); ?></article></div>
 
 <!-------Fin primera columna--------->
 
+<div class="leetambien leetambienmobile"><ul>
+<li><img src="<?php echo get_bloginfo('template_directory');?>/img/servicios/leermas.png"/></li>
+<li>Lee tambi&#233;n: <?php the_field('leetambien'); ?></li></ul></div>
+	
 
-
-</li></ul><p></p><Br></div>	
+</li></ul>
+<div class="espaciador"></div></div?><p></p><Br><p></p><Br><p></p><Br>
+<div class="espaciador"></div>	<div class="espaciador"></div></div?><p></p><Br><p></p><Br>
+<div class="espaciador"></div>	
+	
+	<p></p><Br><p></p><Br><p></p><Br></div>	
 </article><!-- #post-## -->
+<div></div>
 
 
 <!------------------- pinterest code --------------------- -->
