@@ -60,18 +60,6 @@
 		<?php endif; // End if 'post' == get_post_type() ?>
 	</footer><!-- .entry-footer -->
 
-<!-------Compartelo--------->
-<div class="comparteloizq"><article>
-<?php  $image = get_field('compartelo_derch'); if( !empty($image) ): ?><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /><?php endif; ?>
-</article>
-	<div class="redesizq"><div class="comparteloflotrigh"><span>Comp&#225;rtelo</span><ul>
-<li><a href="javascript:pinIt();"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-pinterest.png"/></a></li>
-<li><a href="https://plus.google.com/" target="_new"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-googleplus.png"/></a></li>
-<li><span class="st_twitter_custom"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-twitter.png"/></span></li>
-<li><span class="st_facebook_custom"><img src="<?php echo get_bloginfo('template_directory');?>/img/home/redes-facebook.png"/></span></li>
-	</ul></div></div>	
-</div>
-
 
 <div class="leetambien leetambiendesk"><ul>
 <li><img src="<?php echo get_bloginfo('template_directory');?>/img/servicios/leermas.png"/></li>
